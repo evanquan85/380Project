@@ -1,0 +1,1 @@
+380 EMG analysis using methods according to Lehman, G. J., MacMillan, B., MacIntyre, I., Chivers, M., & Fluter, M. (2006). Shoulder muscle EMG activity during push up variations on and off a Swiss ball. Dynamic medicine : DM, 5, 7. https://doi.org/10.1186/1476-5918-5-7

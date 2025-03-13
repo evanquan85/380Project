@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy import stats
 
 df = pd.read_csv('data/Aodhan/AodhanFeetBall.csv')
 shoulderMVC = pd.read_csv('data/Aodhan/ShoulderMVC.txt')
@@ -59,6 +60,11 @@ Shoulder_MVC_max = shoulderMVC.iloc[:, 0].max()
 
 rms_df['Normalized_Tricep'] = rms_df['Tricep_RMS'] / Tricep_MVC_max
 rms_df['Normalized_Shoulder'] = rms_df['Shoulder_RMS'] / Shoulder_MVC_max
+
+# Perform paired t-tests between Swiss ball and non-Swiss ball trials,
+# looking for differences between muscle amplitude. Differences across the different exercises was
+# not examined-only between the stable and unstable conditions.
+
 
 # Plot Normalized EMG for both Tricep and Shoulder
 plt.figure(figsize=(10, 5))
